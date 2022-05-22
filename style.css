@@ -1,88 +1,125 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
 }
-#header{
-    display:block;
+
+#header {
+    display: block;
     height: 100vh;
-    background:url("https://cdn.discordapp.com/attachments/976965408693317705/976965466264330240/CATO.png");
-    background-repeat:no-repeat;
-    opacity:0.88; 
+    background: url("https://cdn.discordapp.com/attachments/976965408693317705/976965466264330240/CATO.png");
+    background-repeat: no-repeat;
+    opacity: 0.88;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-attachment: fixed;
-      
 }
-#header-content{ 
-  display: flex;
-  flex-direction: column;
-  color:white;
-  height:100vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+#header-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 #nav-bar {
-  display:flex;
-  position:fixed;
-  width:100vw;
-  background-color:black;
-  justify-content: end;
-  height:25px;
-}
-#nav-link{
-  display:flex;
-  text-decoration: none;
-  color:white;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    justify-content: end;
+    height: 25px;
 }
 
-#div-content {
-display:flex;
-flex-direction: row;
-justify-content: end;
-font-size:10px;
-
-
-
+#nav-link {
+    display: flex;
+    text-decoration: none;
+    color: white;
 }
 
-video{
-  display:none;
-}
-h2{
-  display:flex;
-  justify-content: center;
+#section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
 }
 
-#nav-bar #nav-link{
-  padding-left: 10px;
-  margin-right: 10px;
-  padding-right:20px;
+#section-image {
+    display: flex;
+    width: 35%;
+    margin-right: 15px;
 }
-#header-img{
-display:none;
+
+#section-text {
+    font-size: 20px;
 }
-#header-content h1{
-padding-bottom: 10px;
-font-size:2.5rem;
+
+#journal {
+    display: flex;
+    width: 45%;
 }
-#header-content p{
-  padding-bottom: 10px;
-  font-size:1.5rem;
-  }
-@media (min-width:1000px){
-#header{
-  background-position: 100% 80%;
+
+#section-h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
 }
+
+video {
+    display: none;
 }
-@media screen and (max-width:600px){
-#header-content h1{
-padding-bottom: 10px;
-font-size:2rem;
+
+h2 {
+    display: flex;
+    justify-content: center;
 }
-#header-content p{
-  padding-bottom: 10px;
-  font-size:1.5rem;
-  }
+
+#nav-bar #nav-link {
+    padding-left: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+}
+
+#header-img {
+    display: none;
+}
+
+#header-content h1 {
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+#header-content p {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+@media (min-width:1000px) {
+    #header {
+        background-position: 100% 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #header-content h1 {
+        padding-bottom: 10px;
+        font-size: 2rem;
+    }
+    #header-content p {
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    #section-info {
+        margin: 16px;
+    }
+    #section-image {
+        display: none;
+    }
+    #journal {
+        width: 80%;
+    }
 }
