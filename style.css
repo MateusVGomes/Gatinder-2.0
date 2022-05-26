@@ -3,56 +3,57 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    
 }
-body{
-    background-image: linear-gradient(to right top, #a31666, #871c6a, #6b2169, #4d2364, #30225b, #472560, #5c2764, #712a66, #b33761, #e05d4a, #ef9529, #dcd320);
-    color:#E6C6E9;
-    font-family: 'Nanum Gothic', sans-serif;
+
+body {
+    background-image: linear-gradient( to right top, #a31666, #871c6a, #6b2169, #4d2364, #30225b, #472560, #5c2764, #712a66, #b33761, #e05d4a, #ef9529, #dcd320);
+    color: #e6c6e9;
+    font-family: "Nanum Gothic", sans-serif;
 }
+
 #header {
-    display: block;
+    display: flex;
     height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background: url("https://cdn.discordapp.com/attachments/976965408693317705/976965466264330240/CATO.png");
     background-repeat: no-repeat;
     opacity: 0.88;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
 }
 
 #header-content {
     display: flex;
     flex-direction: column;
     color: white;
-   
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom:0.5px solid white;
+    border-bottom: 0.5px solid white;
     border-width: 10px;
-    
+    height: 10%;
 }
 
 #nav-bar {
     display: flex;
     position: fixed;
+    align-self: baseline;
     width: 100vw;
-    background-color:#4d2364;
+    background-color: #4d2364;
     justify-content: center;
-    
     height: 35px;
-    
 }
 
 .nav-link {
     display: flex;
     text-decoration: none;
     color: white;
-    margin-left:0.8%;
-    margin-right:2.3%;
-    margin-top:0.5%;
+    margin-left: 0.8%;
+    margin-right: 2.3%;
+    margin-top: 0.5%;
 }
 
 #section-info {
@@ -102,6 +103,29 @@ body{
     justify-content: center;
 }
 
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #30225b;
+    border-top: solid 10px 472560;
+}
+
+#footer-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
 video {
     display: none;
 }
@@ -124,23 +148,20 @@ h2 {
 #header-content h1 {
     padding-bottom: 10px;
     font-size: 2.5rem;
-    
 }
 
 #header-content p {
     padding-bottom: 10px;
     font-size: 1.5rem;
-    
-    
 }
 
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
     #header {
         background-position: 100% 80%;
     }
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width: 1300px) {
     #header-content h1 {
         padding-bottom: 10px;
         font-size: 2rem;
